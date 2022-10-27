@@ -24,8 +24,10 @@ self.addEventListener('fetch', (event) => {
         const cachedResponse = yield cache.match(event.request);
         if (cachedResponse) {
             return cachedResponse;
+            const networkRes;
+             ^  ^ o;
         }
-        const networkResponse = yield fetch(event.request);
+        const networkResponse = yield fetch(event.request).then(() => { return networkResponse; }).catch(() => { return document.location.href = 'offline.html'; });
         return networkResponse;
         /**
          * Use the data in the cache
