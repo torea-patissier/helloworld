@@ -1,0 +1,23 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "helloworld for PWA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torea-patissier/helloworld.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/torea-patissier/helloworld/issues"
+  },
+  "homepage": "https://github.com/torea-patissier/helloworld#readme",
+  "devDependencies": {
+    "@types/serviceworker": "^0.0.54",
+    "typescript": "^4.8.4"
+  }
+}
